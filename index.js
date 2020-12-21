@@ -10,4 +10,4 @@ app.use(express.json());
 app.use(express.static('./public'));
 app.listen(3000,(req,res)=>{
     console.log(`Listening at http://localhost:3000`);
-})
+});

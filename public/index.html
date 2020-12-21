@@ -10,7 +10,8 @@
 </head>
 <body>
     <main>
-        <h2>This is for now the home page of the whole thing.</h2>
+        <h1>Nidan Diagnostic Centre</h1>
+        <h2>Feedback Form</h2>
         <div class="form-main">
             <form action="">
                 <div class="mb-3">
@@ -27,9 +28,102 @@
                     <input type="tel" class="form-control" id="phoneno" aria-describedby="emailHelp">
                 </div>
                 <div class="mb-3">
-                    <label for="question1" class="form-label">Were you properly attended by the Front Office</label>
-                    <input type="tel" class="form-control" id="phoneno" aria-describedby="emailHelp">
+                    <label class="form-label">Were you properly attended by the Front Office? </label>
+                    <div class="form-check">
+                        <input type="radio" id="excellentf" name="frontoffice" value="good">
+                        <label for="excellentf">Excellent</label>
+                    </div>
+                    <div class="form-check">
+                    <input type="radio" id="goodf" name="frontoffice" value="good">
+                    <label for="goodf">Good</label>
+                    </div>
+                    <div class="form-check">
+                    <input type="radio" id="satisfactoryf" name="frontoffice" value="fair">
+                    <label for="satisfactoryf">Satisfactory</label>
+                    </div>
+                    <div class="form-check">
+                    <input type="radio" id="poorf" name="frontoffice" value="poor">
+                    <label for="poorf">Poor</label>
+                    </div>
                 </div>
+                <div class="mb-3">
+                    <label class="form-label">How was your overall experience at the centre? </label>
+                    <div class="form-check">
+                    <input type="radio" id="excellento" name="overall" value="good">
+                    <label for="excellento">Excellent</label>
+                    </div>
+                    <div class="form-check">
+                    <input type="radio" id="goodo" name="overall" value="good">
+                    <label for="goodo">Good</label>
+                    </div>
+                    <div class="form-check">
+                    <input type="radio" id="satisfactoryo" name="overall" value="fair">
+                    <label for="satisfactoryo">Satisfactory</label>
+                    </div>
+                    <div class="form-check">
+                    <input type="radio" id="pooro" name="overall" value="poor">
+                    <label for="pooro">Poor</label>
+                    </div>
+                </div>
+                <div class="mb-3">
+                    <label for="report" class="form-label">How would you like to collect your reports?</label>
+                    <div class="form-check">
+                    <input type="checkbox" id="visit" value="visit" name="reporting">
+                    <label for="visit">Visit the centre</label>
+                    </div>
+                    <div class="form-check">
+                    <input type="checkbox" id="website" value="website" name="reporting">
+                    <label for="website">With website</label>
+                    </div>
+                    <div class="form-check">
+                    <input type="checkbox" id="email" value="email" name="reporting">
+                    <label for="email">Email</label>
+                    </div>
+                    <div class="form-check">
+                    <input type="checkbox" id="home" value="home" name="reporting">
+                    <label for="home">Home Delivery</label>
+                    </div>
+                    <div class="form-check">
+                    <input type="checkbox" id="whatsapp" value="whatsapp" name="reporting">
+                    <label for="whatsapp">Whatsapp</label>
+                    </div>
+
+                </div>
+                <div class="mb-3">
+                    <label class="form-label">Are you aware of our home collection and Online report services?</label>
+                    <div class="form-check">
+                    <input type="radio" id="yess" name="service" value="yes">
+                    <label for="yess">Yes</label>
+                    </div>
+                    <div class="form-check">
+                    <input type="radio" id="nos" name="service" value="no">
+                    <label for="nos">No</label>
+                    </div>
+                </div>
+                <div class="mb-3">
+                    <label class="form-label">How long was the waiting time after billing for your tests?</label>
+                    <div class="form-check">
+                    <input type="radio" id="0-5min" name="wait-time" value="0-5min">
+                    <label for="0-5min">0-5 minuters</label>
+                    </div>
+                    <div class="form-check">
+                    <input type="radio" id="5-15min" name="wait-time" value="5-15min">
+                    <label for="5-15min">5-15 minutes</label>
+                    </div>
+                    <div class="form-check">
+                    <input type="radio" id="15-30min" name="wait-time" value="15-30min">
+                    <label for="15-30min">15-30 minutes</label>
+                    </div>
+                    <div class="form-check">
+                    <input type="radio" id="over30" name="wait-time" value="over30">
+                    <label for="over30">Over 30 minutes</label>
+                    </div>
+                </div>
+                <div class="mb-3">
+                    <label for="other" class="form-label">Any other feedback or recommendations?</label>
+                    <textarea type="text" class="form-control" id="other" aria-describedby="emailHelp"></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">Submit</button>
             </form>
         </div>
     </main>
