@@ -13,19 +13,19 @@
         <h1>Nidan Diagnostic Centre</h1>
         <h2>Feedback Form</h2>
         <div class="form-main">
-            <form action="">
+            <form method="post" action="submit" >
                 <div class="mb-3">
                     <label for="patientname" class="form-label">Name of patient</label>
-                    <input type="text" class="form-control" id="patientname" aria-describedby="emailHelp">
+                    <input type="text" class="form-control" id="patientname" name="name">
                 </div>
                 <div class="mb-3">
                     <label for="datereg" class="form-label">Date of registration</label>
-                    <input type="date" class="form-control" id="datereg" aria-describedby="emailHelp">
+                    <input type="date" class="form-control" id="datereg" name="datereg">
                     <!-- Correct the format of the date time -->
                 </div>
                 <div class="mb-3">
                     <label for="phoneno" class="form-label">Mobile number</label>
-                    <input type="tel" class="form-control" id="phoneno" aria-describedby="emailHelp">
+                    <input type="tel" class="form-control" id="phoneno" name="phoneno">
                 </div>
                 <div class="mb-3">
                     <label class="form-label">Were you properly attended by the Front Office? </label>
@@ -103,25 +103,25 @@
                 <div class="mb-3">
                     <label class="form-label">How long was the waiting time after billing for your tests?</label>
                     <div class="form-check">
-                    <input type="radio" id="0-5min" name="wait-time" value="0-5min">
+                    <input type="radio" id="0-5min" name="waittime" value="0-5min">
                     <label for="0-5min">0-5 minuters</label>
                     </div>
                     <div class="form-check">
-                    <input type="radio" id="5-15min" name="wait-time" value="5-15min">
+                    <input type="radio" id="5-15min" name="waittime" value="5-15min">
                     <label for="5-15min">5-15 minutes</label>
                     </div>
                     <div class="form-check">
-                    <input type="radio" id="15-30min" name="wait-time" value="15-30min">
+                    <input type="radio" id="15-30min" name="waittime" value="15-30min">
                     <label for="15-30min">15-30 minutes</label>
                     </div>
                     <div class="form-check">
-                    <input type="radio" id="over30" name="wait-time" value="over30">
+                    <input type="radio" id="over30" name="waittime" value="over30">
                     <label for="over30">Over 30 minutes</label>
                     </div>
                 </div>
                 <div class="mb-3">
                     <label for="other" class="form-label">Any other feedback or recommendations?</label>
-                    <textarea type="text" class="form-control" id="other" aria-describedby="emailHelp"></textarea>
+                    <textarea type="text" class="form-control" id="other" name="other" ></textarea>
                 </div>
                 <button type="submit" class="btn btn-primary">Submit</button>
             </form>
