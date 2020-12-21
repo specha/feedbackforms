@@ -11,13 +11,27 @@
 <body>
     <main>
         <h2>This is for now the home page of the whole thing.</h2>
-        <form action="">
-            <label for="lab">
-                Enter Name
-            </label>
-            <input type="text" id="lab">
-            <button type="submit"> Submit</button>
-        </form>
+        <div class="form-main">
+            <form action="">
+                <div class="mb-3">
+                    <label for="patientname" class="form-label">Name of patient</label>
+                    <input type="text" class="form-control" id="patientname" aria-describedby="emailHelp">
+                </div>
+                <div class="mb-3">
+                    <label for="datereg" class="form-label">Date of registration</label>
+                    <input type="date" class="form-control" id="datereg" aria-describedby="emailHelp">
+                    <!-- Correct the format of the date time -->
+                </div>
+                <div class="mb-3">
+                    <label for="phoneno" class="form-label">Mobile number</label>
+                    <input type="tel" class="form-control" id="phoneno" aria-describedby="emailHelp">
+                </div>
+                <div class="mb-3">
+                    <label for="question1" class="form-label">Were you properly attended by the Front Office</label>
+                    <input type="tel" class="form-control" id="phoneno" aria-describedby="emailHelp">
+                </div>
+            </form>
+        </div>
     </main>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
